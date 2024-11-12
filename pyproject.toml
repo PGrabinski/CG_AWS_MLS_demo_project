@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "AWS ML Certificate Course Demo Project"
+version = "0.1.0"
+description = "Following the demo project from Cloud Guru's AWS ML Speciality Course"
+authors = ["Paweł Grabiński <pawelrgrabinski@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.35.58"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.test]
+optional = true
+
+
+[tool.poetry.group.test.dependencies]
+pytest = ">=8.3.0"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = ">=3.8.0"
+ruff = ">=0.5.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
