@@ -33,4 +33,5 @@ while True:
         Data=random_user,
         PartitionKey=partition_key,
     )
+    print(f"Sent user with id: {random_user_index}")
     time.sleep(random.uniform(0, 1))
